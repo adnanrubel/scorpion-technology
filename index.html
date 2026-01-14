@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scorpion Technology | Odoo ERP Solutions</title>
+  <!-- Favicon -->
+  <link rel="icon" href="images/company-logo.png" type="image/png" style="height:32px;">  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header style="display:flex; align-items:center; justify-content:space-between; padding:20px 60px; background:rgba(11,28,45,0.95); position:sticky; top:0; z-index:1000;">
+  
+  <!-- Logo + Site Name -->
+  <div style="display:flex; align-items:center; gap:8px;">
+    <a href="index.html">
+      <img src="images/company-logo.png" alt="Scorpion Technology" style="height:50px;">
+    </a>
+    <h1 style="color:#00C2FF; font-size:24px; margin:0;">Scorpion Technology</h1>
+  </div>
+  
+  <!-- Navigation with logo icons -->
+  <nav>
+    <a href="index.html"> Home</a>
+    <a href="services.html"> Services</a>
+    <a href="about.html"> About</a>
+    <a href="contact.html"> Contact</a>
+    <a class="btn" href="contact.html"> Free Consultation</a>
+  </nav>
+</header>
+
+
+<section class="hero">
+  <div>
+    <h2>All-in-One ERP Solutions Powered by Odoo</h2>
+    <p>Automate POS, Inventory, HR, Payroll, Accounting and more with a single intelligent ERP platform.</p>
+    <div class="actions">
+      <a class="btn" href="contact.html">Request Demo</a>
+      <a class="btn" style="background:#00C2FF;color:#000" href="contact.html">Contact Sales</a>
+    </div>
+  </div>
+	
+	<div class="hero-box">
+	  <div class="slider">
+		<img id="heroImg" class="slide" src="images/hero-dashboard.png" alt="ERP Dashboard Preview" 
+			 oncontextmenu="return false;" ondragstart="return false;" onmousedown="return false;" onselectstart="return false;">
+		<img id="scImg" class="slide" src="images/scorpion.png" alt="ERP Dashboard Preview 2" 
+			 oncontextmenu="return false;" ondragstart="return false;" onmousedown="return false;" onselectstart="return false;">
+	  </div>
+	</div>	
+
+	<!-- Lightbox Overlay -->
+	<div id="lightbox" style="
+	  display:none;
+	  position:fixed;
+	  top:0;
+	  left:0;
+	  width:100%;
+	  height:100%;
+	  background:rgba(0,0,0,0.9);
+	  justify-content:center;
+	  align-items:center;
+	  z-index:9999; /* Very high to stay above menu */
+	"
+	oncontextmenu="return false;"	
+	ondragstart="return false;"
+	onmousedown="return false;"
+	onselectstart="return false;">
+	  <span id="close" style="
+		position:absolute;
+		top:20px;
+		right:30px;
+		color:white;
+		font-size:30px;
+		cursor:pointer;
+		z-index:10000; /* ensure it's above overlay */
+	  ">&times;</span>
+	  <img id="lightbox-img" src="" style="max-width:90%; max-height:90%;">
+	</div>
+
+</section>
+
+<section>
+  <h2 class="section-title">One Platform. All Business Operations.</h2>
+  <div class="grid">
+    <div class="card"><h3>POS</h3><p>Retail-ready POS integrated with inventory and accounting.</p></div>
+    <div class="card"><h3>Inventory</h3><p>Real-time stock and warehouse management.</p></div>
+    <div class="card"><h3>HR & Payroll</h3><p>Attendance, payroll and employee lifecycle.</p></div>
+    <div class="card"><h3>Accounting</h3><p>Automated financial operations and reporting.</p></div>
+    <div class="card"><h3>CRM</h3><p>Manage leads, customers and sales pipeline.</p></div>
+    <div class="card"><h3>Purchase</h3><p>Vendor management and procurement automation.</p></div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Ready to Transform Your Business?</h2>
+  <a class="btn" href="contact.html">Get Free ERP Consultation</a>
+</section>
+
+<footer>
+  <div>
+    <h4>Scorpion Technology</h4>
+    <p>Odoo ERP implementation and custom development company.</p>
+  </div>
+  <div>
+    <h4>Services</h4>
+    <p>Odoo ERP</p>
+    <p>Custom Development</p>
+    <p>POS Solutions</p>
+  </div>
+  <div>
+    <h4>Contact</h4>
+    <p>Email: info@scorpiontech.com</p>
+    <p>WhatsApp: +880-XXXX-XXXX</p>
+  </div>
+</footer>
+
+<div class="copyright">
+  © 2026 Scorpion Technology. All Rights Reserved.
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
