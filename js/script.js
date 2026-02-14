@@ -45,6 +45,8 @@ if (window.location.pathname.endsWith("index.html") || window.location.pathname 
 	});	
 
   }
+
+
 document.addEventListener("DOMContentLoaded", function() {
   const slides = document.querySelectorAll(".slider .slide");
   const slider = document.querySelector(".slider");
@@ -56,5 +58,30 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 3000); // Change image every 3 seconds
 });
   
+}
+
+if (window.location.pathname.endsWith("services.html") || window.location.pathname === "/" ) {
+
+    const allImg = document.getElementById("allImg");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.getElementById("close");
+
+    if (allImg && lightbox && lightboxImg) {
+
+        allImg.addEventListener("click", () => {
+            lightbox.style.display = "flex";
+            lightboxImg.src = allImg.src;
+        });
+
+        closeBtn.addEventListener("click", () => {
+            lightbox.style.display = "none";
+        });
+
+        lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) lightbox.style.display = "none";
+        });
+
+    }
 }
 
